@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin: 8px 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="file"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 4px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .author {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .removeAuthorBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+  }
+  
+  .removeAuthorBtn:hover {
+    background-color: #bd2130;
+  }
+  
+  #previousThesesFileName,
+  #processedRequestsFileName {
+    font-style: italic;
+    margin-left: 10px;
+    color: #555;
+  }
+
+  #toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+    opacity: 0.9;
+    animation: fadeout 3s forwards;
+  }
+  
+  @keyframes fadeout {
+    0% {
+      opacity: 0.9;
+    }
+    80% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

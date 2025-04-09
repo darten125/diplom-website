@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section id="updateProfessorSection">
+    <h2>Обновить данные преподавателя</h2>
+    <form id="updateProfessorForm">
+      <label>Имя:
+        <input type="text" name="name" required>
+      </label><br>
+      <label>Старая должность:
+        <input type="text" name="oldPosition" required>
+      </label><br>
+      <label>Старая кафедра:
+        <input type="text" name="oldDepartment" required>
+      </label><br>
+      <label>Новая должность:
+        <input type="text" name="newPosition" required>
+      </label><br>
+      <label>Новая кафедра:
+        <input type="text" name="newDepartment" required>
+      </label><br>
+      <button type="submit">Обновить преподавателя</button>
+    </form>
+  </section>
+
+  <section id="deleteProfessorSection">
+    <h2>Удалить преподавателя</h2>
+    <form id="deleteProfessorForm">
+      <label>Имя:
+        <input type="text" name="name" required>
+      </label><br>
+      <label>Должность:
+        <input type="text" name="position" required>
+      </label><br>
+      <label>Кафедра:
+        <input type="text" name="department" required>
+      </label><br>
+      <button type="submit">Удалить преподавателя</button>
+    </form>
+  </section>
+
+  <section id="addArticleSection">
+    <h2>Добавить новую статью</h2>
+    <form id="addArticleForm">
+      <label>Название статьи:
+        <input type="text" name="title" required>
+      </label><br>
+      <label>Ссылка:
+        <input type="url" name="link" required>
+      </label><br>
+
+      <div id="authorsContainer">
+      </div>
+
+      <button type="button" id="addAuthorButton">Добавить еще автора</button><br><br>
+      <button type="submit">Добавить статью</button>
+    </form>
+  </section>
+
+  <section id="pushPreviousThesesSection">
+    <h2>Загрузить предыдущие работы</h2>
+    <input type="file" id="previousThesesFileInput" accept=".xlsx, .xls">
+    <span id="previousThesesFileName"></span>
+    <button type="button" id="sendPreviousThesesButton">Отправить файл</button>
+  </section>
+
+  <section id="getPendingRequestsSection">
+    <h2>Получить список ожидающих заявок</h2>
+    <button type="button" id="getPendingRequestsButton">Скачать pending-заявки</button>
+  </section>
+
+  <section id="pushProcessedRequestsSection">
+    <h2>Загрузить обработанные заявки</h2>
+    <input type="file" id="processedRequestsFileInput" accept=".xlsx, .xls">
+    <span id="processedRequestsFileName"></span>
+    <button type="button" id="sendProcessedRequestsButton">Отправить файл</button>
+  </section>
+
+  <section id="getAllCurrentThesesSection">
+    <h2>Получить список утвержденных работ</h2>
+    <button type="button" id="getAllCurrentThesesButton">Скачать список работ</button>
+  </section>
+
+  <div id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
